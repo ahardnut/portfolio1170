@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="flex-container">
+    <aside class="sidebar">Sidebar</aside>
+   
+    
+    <div class="main">
+        <header class="header">Home</header>
+
+        <nav>
+            <a href="#" style="color: blue;">Home</a>
+            <a href="page2_grid.html">News</a>
+            <a href="page3_grid_area.html">Contact</a>
+            <a href="#">About</a>
+        </nav>
+
+        <div class="content">
+            <!-- Main content goes here -->
+            <img src="image1.jpeg" alt="Image 1">
+            <img src="image2.jpeg" alt="Image 2">
+            <img src="image3.jpeg" alt="Image 3">
+        </div>
+
+        <footer class="footer">
+            <p>&copy; csci-1170 assignment-3 Website</p>
+            <a href="#">Help</a>
+            <a href="#">Developer Section</a>
+            <a href="#">Share</a>
+        </footer>
+    </div>
+</div>
+
+<!-- JavaScript Features -->
+
+<!-- Notifications -->
+<button id="notifyButton">Show Notification</button>
+
+<!-- Event Handler -->
+<button id="eventButton">Click Me!</button>
+
+<!-- Conditional -->
+<div id="conditionalFeature">
+  <!-- Content of the conditional feature goes here -->
+</div>
+
+<!-- Colour Changer -->
+<div class="color-changer">
+  <button id="colorScheme1">Color Scheme 1</button>
+  <button id="colorScheme2">Color Scheme 2</button>
+</div>
+
+<div class="form-container">
+  <form id="myForm">
+    <div class="form-row">
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="firstname" required>
+    </div>
+    <div class="form-row">
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lastname" required>
+    </div>
+    <div class="form-row">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-row">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div class="form-row">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <div class="form-row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+<!-- JavaScript Code -->
+<script src="script.js"></script>
+
+</body>
+</html>

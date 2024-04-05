@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Grid Areas Page</title>
+</head>
+<body>
+   
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#news" style="color: blue;">News</a>
+        <a href="page3_grid_area.html">Contact</a>
+        <a href="#about">About</a>
+        
+    </nav>
+    <div class="grid-container">
+        <header class="header">News</header>
+        <aside class="sidebar">Sidebar</aside>
+        <div class="main-content">
+            <ul>
+                <li><img src="image1.jpeg" alt="Image 1"></li>
+                <li><img src="image2.jpeg" alt="Image 2"></li>
+                <li><img src="image3.jpeg" alt="Image 3"></li>
+            </ul>
+            <div>What is Lorem Ipsum?
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                
+                Why do we use it?
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</div>
+        </div>
+        <footer class="footer">
+            <p>&copy; csci-1170 assignment-3 Website</p>
+            <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Developer Section</a></li>
+                <li><a href="#">Share</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <div class="js-features-container">
+        <!-- JavaScript Features -->
+    
+        <!-- Notifications -->
+        <button id="notifyButton">Show Notification</button>
+    
+        <!-- Event Handler -->
+        <button id="eventButton">Click Me!</button>
+    
+        <!-- Conditional -->
+        <div id="conditionalFeature">
+          <!-- Content of the conditional feature goes here -->
+        </div>
+    
+        <!-- Colour Changer -->
+        <div class="color-changer">
+          <button id="colorScheme1">Color Scheme 1</button>
+          <button id="colorScheme2">Color Scheme 2</button>
+        </div>
+    
+        <!-- Form -->
+        <div class="form-container">
+          <form id="myForm">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" required>
+    
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" required>
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+    
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+    
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+    </div>
+    
+
+    <!-- JavaScript Code -->
+    <script src="script.js"></script>
+
+</body>
+</html>

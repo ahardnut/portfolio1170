@@ -1,0 +1,298 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  min-height: 100vh; /* Adjusted to min-height for smaller screens */
+  grid-template-areas: 
+      'header header header' 
+      'aside main main' 
+      'aside footer footer';
+}
+
+.grid-container .header,
+.grid-container .sidebar,
+.grid-container .main-content,
+.grid-container .footer {
+  padding: 20px;
+  color: white;
+}
+
+.grid-container .header {
+  background: #ff4747;
+  grid-area: header;
+  font-size: x-large;
+}
+
+.grid-container .sidebar {
+  background: #5e7ce7;
+  grid-area: aside;
+}
+
+.grid-container .main-content {
+  background: #1eff3c;
+  grid-area: main;
+}
+
+.grid-container .footer {
+  background: #bbff00;
+  grid-area: footer;
+}
+
+/* Grid Areas Layout */
+.grid-areas-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  min-height: 100vh; /* Adjusted to min-height for smaller screens */
+  grid-template-areas: 
+      'header header header' 
+      'aside main main' 
+      'aside footer footer';
+}
+
+.grid-areas-container .header {
+  padding: 20px;
+  background: #fff647;
+  grid-area: header;
+  font-size: x-large;
+}
+
+.grid-areas-container .sidebar {
+  background: #5e7ce7;
+  grid-area: aside;
+}
+
+.grid-areas-container .main-content {
+  background: #1e90ff;
+  grid-area: main;
+}
+
+.grid-areas-container .footer {
+  background: #00ffe5;
+  grid-area: footer;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-areas-container {
+    grid-template-areas: 
+        'header header header' 
+        'main main main' 
+        'footer footer footer';
+  }
+
+  .grid-areas-container .sidebar {
+    display: none; /* Hide sidebar on smaller screens */
+  }
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  background: #333;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  flex: 1;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Image Styles */
+img {
+  border: 5px solid #555;
+  padding: 10px;
+  margin: 20px;
+  height: 100px;
+  width: 100px;
+}
+
+/* List Styles */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 5px;
+}
+
+/* Form Styles */
+.form-container {
+  margin: 20px;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: calc(100% - 22px); /* Adjusted to prevent horizontal scrollbar */
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+/* Flexbox Layout */
+.flex-container {
+  display: flex;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Sidebar */
+.flex-container .sidebar {
+  background:#7287d6;
+  padding: 20px;
+  width: 200px; /* Adjust width as needed */
+}
+
+/* Main Content */
+.main {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+}
+
+.content {
+  flex: 1; /* Grow to take available space */
+  background: #ef0cff;
+  padding: 20px;
+  margin-left: 20px; /* Add margin to separate content from sidebar */
+}
+
+/* Header */
+.header {
+  background: #fddb43;
+  font-size: x-large;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background:#00ffe5 ;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  background: #333;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  flex: 1; /* Distribute space evenly */
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* JavaScript Features Container */
+.js-features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.js-features-container > * {
+  width: calc(50% - 20px);
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column; /* Change to column layout for smaller screens */
+  }
+
+  .flex-container .sidebar {
+    width: 100%; /* Make sidebar full width on smaller screens */
+  }
+
+  .content {
+    margin-left: 0; /* Remove margin to make content stack under the sidebar */
+  }
+
+  .js-features-container > * {
+    width: 100%; /* Make JavaScript features full width on smaller screens */
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+#myForm {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 25%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 75%;
+  padding: 0.5rem;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 0.5rem;
+}
