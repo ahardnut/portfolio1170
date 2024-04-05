@@ -64,4 +64,4 @@ This website was created without using any external references or materials.
 ---------------------------------------------
 
 Deployment Link:
-https://ahardnut.github.io/Portfolio/
+https://ahardnut.github.io/portfolio1170/
